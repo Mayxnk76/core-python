@@ -14,8 +14,7 @@ print("moduls = ",num1 % num2)
 n1 = float(input("enter first number: "))
 n2 = float(input("enter second number: "))
 
-print("integer division =",n1 // n
-2)
+print("integer division =",n1 // n2)
 
 # Q3 Swap two numbers
 
