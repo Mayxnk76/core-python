@@ -16,16 +16,30 @@
 #             break
 #     else:
 #         print("The number is prime")
+#
+#
+# """ Q3 Print the following pattern
+#     1
+#     1 2
+#     1 2 3
+#     1 2 3 4"""
+#
+# for i in range(1, 5):
+#     for j in range(1, i + 1):
+#         print(j, end=" ")
+#     print()
 
-
-""" Q3 Print the following pattern
-    1
-    1 2
-    1 2 3
-    1 2 3 4"""
+""" Q4 Print the following pattern
+   *
+  * *
+ * * *
+* * * *
+"""
 
 for i in range(1, 5):
-    for j in range(1, i + 1):
-        print(j, end=" ")
+    for j in range(5 - i):
+        print(" ", end="")
+    for k in range(i):
+        print("* ", end="")
     print()
 
