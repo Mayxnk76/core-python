@@ -47,7 +47,7 @@ if num % 2 == 0:
 else:
     print("odd number")
 
- # Q7 print the square of 5 numbers
+# Q7 print the square of 5 numbers
 
 for i in range(5):
         num = int(input("enter number: "))
