@@ -47,8 +47,22 @@
 # else:
 #     print("odd number")
 
- # Q7 print the square of 5 numbers
+#  # Q7 print the square of 5 numbers
+#
+# for i in range(5):
+#         num = int(input("enter number: "))
+#         print("Square =",num * num)
 
-for i in range(5):
-        num = int(input("enter number: "))
-        print("Square =",num * num)
+
+# Q 8 find the greatest of three
+
+a = int(input("enter 1st number="))
+b = int(input("enter 2nd number="))
+c = int(input("enter 3rd number="))
+
+if a >= b and a >= c:
+    print("the A is greatest",a)
+elif b >= a and b >= c:
+    print("the B is greatest",b)
+else:
+    print("the c is greatest",c)
