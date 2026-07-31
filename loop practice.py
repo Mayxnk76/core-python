@@ -62,20 +62,3 @@
 # else:
 #     print("odd number")
 
-# # Q7 pattern
-# # *
-# # * *
-# # * * *
-# # * * * *
-# # * * * * *
-#
-#
-# for i in range(1, 6):
-#     print("* " * i)
-
-# q8 pattern
-
-for i in range(1,6):
-    print("*" * i)
-for j in range(6, 0, -1):
-    print("*" * j)
