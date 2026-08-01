@@ -44,7 +44,10 @@ for i in range(6):
     print()
 
 # Q4 pattern
-
+# * * * *
+# * * * *
+# * * * *
+# * * * *
 
 for i in range(1, 5):
     for j in range(1, 5):
@@ -116,6 +119,17 @@ for i in range(6):
 
 
 # Q9 pattern
+
+ #     *
+ #    ***
+ #   *****
+ #  *******
+ # *********
+ # *********
+ #  *******
+ #   *****
+ #    ***
+ #     *
 
 for i in range(5):
     for j in range(i , 5):
