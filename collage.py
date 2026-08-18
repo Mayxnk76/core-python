@@ -97,16 +97,24 @@
 # print("the octal number is :",oct(num))
 # print("the hexadecimal number is :",hex(num))
 
-# Q14 Take binary, octal and hexadecimal numbers as an input
-# and convert them to Decimal number
+# # Q14 Take binary, octal and hexadecimal numbers as an input
+# # and convert them to Decimal number
+#
+# binary = input("enter BInary number :")
+# octal = input("enter octal number :")
+# hexa = input("enter hexadecimal number :")
+#
+# print("the binary number to decimal is :",int(binary, 2)) # use 2 for binary number
+# print("the octal number to decimal is :",int(octal, 8)) # use 8 for octal number
+# print("the hexadecimal to decimal number is :",int(hexa, 16)) # use 16 for hexa decimal value
 
-binary = input("enter BInary number :")
-octal = input("enter octal number :")
-hexa = input("enter hexadecimal number :")
-
-print("the binary number to decimal is :",int(binary, 2))
-print("the octal number to decimal is :",int(octal, 8))
-print("the hexadecimal to decimal number is :",int(hexa, 16))
-
-
+# # Q15 Take 3 different inputs from user and display their data type.
+#
+# num1 = int(input("enter 1st number :"))
+# num2 = float(input("enter 2nd number :"))
+# num3 = input("enter your name :")
+#
+# print("the data type of 1st number is :",type(num1))
+# print("the data type of 2nd number is :",type(num2))
+# print("the data type of 3rd number is :",type(num3))
 
