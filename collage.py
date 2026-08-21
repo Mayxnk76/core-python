@@ -149,3 +149,36 @@ print("the simple intrest is :",si)
 num = int(input("enter a number:"))
 print(str(num % 2 == 0))
 
+# Q20 Write a program to swap two numbers using a third variable and also
+# without using the third variable.
+
+a = int(input("enter first number:"))
+b = int(input("enter second number:"))
+# using 3rd variable
+c = a
+a = b
+b = c
+print("after swap:",a,b)
+#without using third variable
+a,b = b,a
+
+print("after swap:", a,b)
+
+# Q21 Write a program to display the operations of bitwise AND and bitwise OR
+# on two numbers entered by the user
+
+num1 = int(input("enter 1st number: "))
+num2 = int(input("enter 2nd number: "))
+
+print("Binary AND :",num1 & num2)
+print("Binary OR :",num1 | num2)
+
+# Q 22
+
+x = 100
+y = 200
+
+print(x and y)
+print(x or y)
+
+
