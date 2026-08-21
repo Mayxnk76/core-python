@@ -118,3 +118,34 @@ print("the data type of 1st number is :",type(num1))
 print("the data type of 2nd number is :",type(num2))
 print("the data type of 3rd number is :",type(num3))
 
+# Q16 Perform binary "AND" and "OR" operation for given 2 integer numbers from user input(for python)
+
+num1 = int(input("enter 1st number: "))
+num2 = int(input("enter 2nd number: "))
+
+print("Binary AND :",num1 & num2)
+print("Binary OR :",num1 | num2)
+
+# Q17Write a program to calculate area of circle. (pi*r*r)
+
+r = int(input("eneter value of R :"))
+pi = 3.14
+
+print("the area of circle is :", pi*r*r)
+
+# Q18 Write a program in C to calculate simple interest
+
+p = int(input("enter value of P ="))
+r = int(input("enter value of R ="))
+n = int(input("enter value of N ="))
+
+si = (p*r*n)/100
+
+print("the simple intrest is :",si)
+
+# Q19 Without applying condition statement display output as “true” if a number is
+# an even number and “false” if the number is an odd number
+
+num = int(input("enter a number:"))
+print(str(num % 2 == 0))
+
