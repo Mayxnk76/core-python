@@ -143,3 +143,26 @@ for i in range(1, 6):
         else:
             x = 1
     print()
+
+# 8) Write a program to print the multiplication table of the given number if the number is
+# even.
+num =  int(input("enter a number :"))
+
+for i in range(1, 11):
+    if num % 2 == 1:
+        print("the number is odd")
+        break
+    if num % 2 == 0:
+        print(num,"X",i,"=",num*i)
+
+# 9) Write a program to generate the Fibonacci series uptil n.
+# 1,1,2,3,5,8,….
+
+num = int(input("enter number :"))
+fib1 = 0
+fib2 = 1
+for i in range(1, num + 1):
+    print(fib1,end=" ")
+    fib3 = fib1 + fib2
+    fib1 = fib2
+    fib2 = fib3
