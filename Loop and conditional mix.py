@@ -205,6 +205,19 @@ if username == c_username and password == c_pass:
 else:
     if username != c_username:
         print("wrong user name!")
+
+# 13) Determine the season based on the month entered by the user
+
+month = input("enter (number of month) OR (name of month):").lower()
+
+if month == "12" or month == "1"or month == "2" or month == "desember" or month == "january" or month =="february" or month == "11" or month == "november":
+    print("the season is winter")
+elif month == "3" or month == "4"or month == "5" or month == "march" or month == "april" or month =="may" or month == "6" or month == "june":
+    print("the season is summer")
+elif month == "7" or month == "8"or month == "9" or month == "september" or month == "august" or month =="july" or month =="10" or month == "october":
+    print("the season is monsoon")
+else:
+    print("you enter wrong number of months")
     elif password != c_pass:
         print("wrong password!")
     else:
