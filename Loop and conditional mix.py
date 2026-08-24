@@ -162,7 +162,50 @@ num = int(input("enter number :"))
 fib1 = 0
 fib2 = 1
 for i in range(1, num + 1):
+
+# 10) Write a program to find the sum of all the digits of a given number.
+
+num = int(input("enter number:"))
+sum = 0
+
+while num > 0:
+    digit = num % 10
+    sum = sum + digit
+    num = num //10
+print("the sum of all digit is :",sum)
+
+
     print(fib1,end=" ")
     fib3 = fib1 + fib2
     fib1 = fib2
     fib2 = fib3
+
+# 11) Write a program to find the GCD of the given number.
+print(math.gcd(12,18)) #Built-in function in python
+
+# using simple loop methods
+num = int(input("enter 1st number:"))
+num1 = int(input("enter 2nd number:"))
+gcd = 1
+
+for i in range(1, min(num,num1)+1):
+    if num % i == 0 and num1 % i == 0:
+        gcd = i
+print("GCD of",num,"and",num1,"is:",gcd)
+
+# 12) Write a program for login check
+c_username = "xyz222"
+c_pass = "xyz@1234"
+
+username = input("enter yout username:")
+password = input("enter your password:")
+ 
+if username == c_username and password == c_pass:
+     print("login successful")
+else:
+    if username != c_username:
+        print("wrong user name!")
+    elif password != c_pass:
+        print("wrong password!")
+    else:
+        print("username and password both are wrong!")
