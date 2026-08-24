@@ -218,7 +218,3 @@ elif month == "7" or month == "8"or month == "9" or month == "september" or mont
     print("the season is monsoon")
 else:
     print("you enter wrong number of months")
-    elif password != c_pass:
-        print("wrong password!")
-    else:
-        print("username and password both are wrong!")
