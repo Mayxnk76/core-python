@@ -210,7 +210,7 @@ else:
 
 month = input("enter (number of month) OR (name of month):").lower()
 
-if month == "12" or month == "1"or month == "2" or month == "desember" or month == "january" or month =="february" or month == "11" or month == "november":
+if month == "12" or month == "1"or month == "2" or month == "december" or month == "january" or month =="february" or month == "11" or month == "november":
     print("the season is winter")
 elif month == "3" or month == "4"or month == "5" or month == "march" or month == "april" or month =="may" or month == "6" or month == "june":
     print("the season is summer")
