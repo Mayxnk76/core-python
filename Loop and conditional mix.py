@@ -1,4 +1,4 @@
-# 1) Write a program to check whether the given number is Armstrong or not?
+
 
 num = int(input("enter nuber to check armstrong number :"))
 
