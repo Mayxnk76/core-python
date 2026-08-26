@@ -199,10 +199,11 @@ c_pass = "xyz@1234"
 
 username = input("enter yout username:")
 password = input("enter your password:")
- 
+# Check whether both username AND password are correct
 if username == c_username and password == c_pass:
      print("login successful")
 else:
+     # Check whether the entered username is wrong
     if username != c_username:
         print("wrong user name!")
 
