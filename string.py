@@ -97,5 +97,73 @@ s = input("Enter a string: ")
 for i in range(len(s) - 1, -1, -1):
     print(s[i], end="")
 
+# 10 Take a string as an input from the user. Find total number of vowels in it. 
 
+s = input("Enter a string: ")
 
+count = 0
+
+for ch in s:
+    if ch in "aeiouAEIOU":
+        count = count + 1
+
+print("Total vowels:", count)
+
+# 11	Take two strings as input s1 and s2 and check whether s2 is present in s1 or not.
+
+s1 = input("Enter first string: ")
+s2 = input("Enter second string: ")
+
+if s2 in s1:
+    print("s2 is present in s1")
+else:
+    print("s2 is not present in s1")
+
+# 12.	If s2 is a part of s1 then print the 1st and last occurrences of it 
+
+s1 = input("Enter first string: ")
+s2 = input("Enter second string: ")
+
+if s2 in s1:
+    first_occurrence = s1.find(s2)
+    last_occurrence = s1.rfind(s2)
+
+    print("First occurrence:", first_occurrence)
+    print("Last occurrence:", last_occurrence)
+
+else:
+    print("s2 is not present in s1")
+
+# 13.	If s2 is present in s1 then also count number of times it occurs in s1.
+s1 = input("Enter first string: ")
+s2 = input("Enter second string: ")
+
+if s2 in s1:
+    count = s1.count(s2)
+    print("Number of occurrences:", count)
+
+else:
+    print("s2 is not present in s1")
+
+# 14.	Count total number of words in the string input by user 
+
+s = input("Enter a string: ")
+
+words = s.split()
+
+print("Total words:", len(words))
+
+# 15. Take an input character from the user and check 0whether that character is present in the 
+# above given string or not. – Using ‘in’ operator and using ‘not in’ operator
+
+s = 'I like "Python Programming" very much'
+
+ch = input("Enter a character: ")
+
+# Using in operator
+if ch in s:
+    print("Character is present")
+
+# Using not in operator
+if ch not in s:
+    print("Character is not present")
