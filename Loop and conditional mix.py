@@ -219,3 +219,75 @@ elif month == "7" or month == "8"or month == "9" or month == "september" or mont
     print("the season is monsoon")
 else:
     print("you enter wrong number of months")
+
+# 14.Write a program to simulate ATM cash withdrawal. (check balance, min/max limits , insufficient funds)
+
+bal = 100000
+while True:
+    print("-----ATM-----")
+    print("1.Check Balance")
+    print("2.Withdraw Cash")
+    print("3.Exit")
+
+    choice = int(input("Enter your choice:"))
+
+    if choice == 1:
+        print("your Balance is:",bal)
+    elif choice == 2:
+        amount = int(input("Enter Withdrawal amount:"))
+
+        if amount < 100:
+            print("Minimum Withdrawal amount is 100")
+        elif amount > 20000:
+            print("Maximum Withdrawal amount is 20,000")
+        elif amount > bal:
+            print("Insufficient Funds")
+        else:
+            bal = bal - amount
+            print("Please collect your cash")
+            print("Remaining balance is:",bal)
+    elif choice == 3:
+        print("Thank you for using the ATM")
+        break
+    else:
+        print("Invalid Choice")
+
+#15. Write a program to classify a triangle as equilateral, scalene or isosceles.
+
+a = int(input("Enter First Number :"))
+b = int(input("Enter Second Number :"))
+c = int(input("Enter Third NUmber :"))
+
+if a == b and b == c:
+    print("Equilateral Triangle")
+elif a == b or b == c or a == c:
+    print("Isosceles Triangle")
+else:
+    print("Scalene Triangle")
+
+#16. Write a program to check whether the entered year,month and day forms a valid date or not.
+
+year = int(input("Enter year: "))
+month = int(input("Enter month: "))
+day = int(input("Enter day: "))
+
+if month < 1 or month > 12:
+    print("Invalid Date")
+
+else:
+    if month == 2:
+        if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
+            max_days = 29
+        else:
+            max_days = 28
+
+    elif month == 4 or month == 6 or month == 9 or month == 11:
+        max_days = 30
+
+    else:
+        max_days = 31
+
+    if day >= 1 and day <= max_days:
+        print("Valid Date")
+    else:
+        print("Invalid Date")
