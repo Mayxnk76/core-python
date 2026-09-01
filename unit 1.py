@@ -269,4 +269,60 @@ for i in range(1,6):
 print(x and y)
 print(x or y)
 
+# 7.Number pyramid using range()
 
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
+
+# 8. Print all prime numbers between 10 to 50
+for num in range(10, 51):
+     count = 0
+     for i in range(1,num+1):
+         if num%i==0:
+             count = count + 1
+     if count == 2:
+         print(num)
+
+# 9. Take 10 numbers and check palindrome
+
+for i in range(10):
+    num = input("Enter a number: ")
+    if num == num[::-1]:
+        print("Palindrome")
+    else:
+        print("Not Palindrome")
+# 10. Check Armstrong number
+
+num = int(input("Enter number: "))
+
+temp = num
+sum = 0
+
+while temp > 0:
+    digit = temp % 10
+    sum = sum + digit ** 3
+    temp = temp // 10
+
+if sum == num:
+    print("Armstrong number")
+else:
+    print("Not Armstrong number")
+
+# 11. Armstrong numbers between two numbers
+start = int(input("Enter starting number: "))
+end = int(input("Enter ending number: "))
+
+for num in range(start, end + 1):
+
+    temp = num
+    sum = 0
+
+    while temp > 0:
+        digit = temp % 10
+        sum = sum + digit ** 3
+        temp = temp // 10
+
+    if sum == num:
+        print(num)
