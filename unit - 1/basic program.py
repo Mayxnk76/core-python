@@ -326,3 +326,76 @@ for num in range(start, end + 1):
 
     if sum == num:
         print(num)
+# # 12.	Calculator using the operators or menu.
+#
+# num1 = eval(input("enter 1st number:"))
+# num2 = eval(input("enter 2nd number:"))
+#
+# print("---------------------")
+# print("1.addition")
+# print("2,subtraction")
+# print("3.miltiplication")
+# print("4.division")
+# print("---------------------")
+#
+# choice = int(input("enter your choice:"))
+#
+# if choice == 1:
+#     print("the addition is :",num1 + num2)
+# elif choice == 2:
+#     print("the subtraction is :",num1 -num2)
+# elif choice == 3:
+#     print("the multiplication is :",num1 * num2)
+# elif choice == 4:
+#     print("the division is :",num1 / num2)
+# else:
+#     print("enter valid choice")
+
+# # 13.	Write a program to find the sum of all the digits of the number given by the user
+#
+# num = int(input("enter a number :"))
+# sum = 0
+# while num > 0:
+#     digit = num % 10
+#     sum = sum + digit
+#     num = num // 10
+#
+# print("the sum of digit is:",sum)
+
+# # 14.	WAP to input n numbers and count the total number of odd and even numbers in the list.
+# n =int(input("enter how many numbers:"))
+# num1 = []
+# for i in range(n):
+#     num = int(input("enter number:"))
+#     num1.append(num)
+# even = 0
+# odd = 0
+#
+# for num in num1:
+#     if num % 2==0:
+#         even = even + 1
+#     else:
+#         odd = odd + 1
+# print("list:",num1)
+# print("EVEN:",even)
+# print("ODD:",odd)
+
+# 15.	Print multiple lines using single print statement. as –
+#                      I like “Python Programming” very much
+#                      It is my favorite subject
+
+print('I like "Python Programming" very much \n It is my favorite subject')
+
+# 16.	Print a part of the above string “very much” using the slice operator.
+text = 'I like "Python Programming" very much'
+print(text[27:36])
+
+# 17.	Print the last 5 characters from the above given string
+text = 'I like "Python Programming" very much'
+
+print(text[-5:])
+
+# 18.	Print all the characters in small letters. Also print all the even number
+
+text = 'I like "Python Programming" very much'
+print(text.lower())
