@@ -1,3 +1,4 @@
+# Q1
 emp = {
 "E101": {"name": "Amit", "dept": "IT", "salary": 55000,
 "skills": ["Python", "SQL"],
@@ -42,6 +43,7 @@ for v in emp.values():
 emp["E104"]["salary"]=emp["E104"]["salary"]+emp["E104"]["salary"]*0.10
 print(emp["E104"])
 
+# Q2
 stud = {
 "S1": {"name": "Amit", "age": 16,
 "marks": {"Math": 85, "Science": 90, "English": 78},
@@ -57,42 +59,42 @@ stud = {
 "guardian": ("Mrs. Rao", "9998880000")},
 }
 
-# # Queries:
-# # 1. Print student "S2"’s marks in Science only.
-# print(stud["S2"]["marks"]["Science"])
-# # 2. Print the guardian’s name and phone number (the tuple) for
-# # student "S3".
-# print(stud["S3"]["guardian"][0],stud["S3"]["guardian"][1])
-# # 3. Calculate and print each student’s total marks (sum of all 3
-# # subjects).
-# for k,v in stud.items():
-#     total=sum(v["marks"].values())
-#     print(k,v["name"],total)
-# 4. Find and print the name of the student with the highest total
-# marks.
-# mx = 0
-# l = []
-# name = ""
-# for k,v in stud.items():
-#     total = sum(v["marks"].values())
-#     l.append(total)
-#     print(l)
-#     for i in range(total + 1):
-#         if i > mx:
-#             mx = i
-#             name = v["name"]
-# print(name,"mark:",mx)
-# l = []
-# mx = 0
-# name = ""
-# for k,v in stud.items():
-#     l.append(sum(v["marks"].values()))
-#     print(l)
-#     for i in range(len(l)):
-#         if l[i] > mx:
-#             mx = l[i]
-#             name = v["name"]
-#     print(name,":",mx)
+# Queries:
+# 1. Print student "S2"’s marks in Science only.
+print(stud["S2"]["marks"]["Science"])
+# 2. Print the guardian’s name and phone number (the tuple) for
+# student "S3".
+print(stud["S3"]["guardian"][0],stud["S3"]["guardian"][1])
+# 3. Calculate and print each student’s total marks (sum of all 3
+# subjects).
+for k,v in stud.items():
+    total=sum(v["marks"].values())
+    print(k,v["name"],total)
+4. Find and print the name of the student with the highest total
+marks.
+mx = 0
+l = []
+name = ""
+for k,v in stud.items():
+    total = sum(v["marks"].values())
+    l.append(total)
+    print(l)
+    for i in range(total + 1):
+        if i > mx:
+            mx = i
+            name = v["name"]
+print(name,"mark:",mx)
+l = []
+mx = 0
+name = ""
+for k,v in stud.items():
+    l.append(sum(v["marks"].values()))
+    print(l)
+    for i in range(len(l)):
+        if l[i] > mx:
+            mx = l[i]
+            name = v["name"]
+    print(name,":",mx)
 
 
 # 5. List the names of all students who scored above 80 in Math.
@@ -106,6 +108,7 @@ for k,v in stud.items():
 stud["S1"]["marks"]["computer"] = "95"
 print(stud["S1"])
 
+# Q3
 prod = {
 "P001": {"name": "Laptop", "price": 55000, "category":"Electronics",
 "tags": ["computer", "portable"],"specs": ("Intel i5", "8GB RAM", "512GB SSD")},
@@ -163,3 +166,46 @@ print("The total product above 5000 is :",count)
 dis = (prod["P001"]["price"]-prod["P001"]["price"]*0.15)
 prod["P001"]["price"] = dis
 print(prod["P001"])
+
+# Q4
+pat = {
+"PID001": {"name": "Rita", "age": 45, "doctor": "Dr. Mehta","medications": ["Metformin", "Insulin"],
+"admission": ("2026-01-05", "Ward 3")},
+"PID002": {"name": "Sanjay", "age": 60, "doctor": "Dr. Rao","medications": ["Atorvastatin"],
+"admission": ("2026-01-07", "Ward 1")},
+"PID003": {"name": "Kavita", "age": 32, "doctor": "Dr. Mehta","medications": ["Paracetamol", "Vitamin D"],
+"admission": ("2026-01-08", "Ward 3")},
+"PID004": {"name": "Farhan", "age": 50, "doctor": "Dr. Iyer","medications": ["Amlodipine"],
+"admission": ("2026-01-06", "Ward 2")},
+}
+
+# Queries:
+# 1. Print the full record of patient "PID002".
+print(pat["PID002"])
+for k,v in pat["PID002"].items():
+    print(k, "=",v)
+# 2. List the names of all patients under "Dr. Mehta".
+m = []
+for k,v in pat.items():
+    if "Dr. Mehta" in v["doctor"]:
+        m.append(v["name"])
+print(m)
+# 3. Find and print the name of the oldest patient.
+old = 0
+name = ""
+for k,v in pat.items():
+    if v["age"] > old:
+        old = v["age"]
+        name = v["name"]
+print(name, "=",old)
+# 4. Print the admission date and ward (the tuple) for patient "PID004".
+print(pat["PID004"]["admission"][1])
+# 5. Count how many patients are currently in "Ward 3".
+count = 0
+for k,v in pat.items():
+    if v["admission"][1] == "Ward 3":
+        count += 1
+print("the Ward 3 admission:",count)
+# 6. Add "Cough Syrup" to patient "PID003"’s medications list.
+pat["PID003"]["medications"].insert(2,"Cough Syrup")
+print(pat["PID003"])
