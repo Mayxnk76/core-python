@@ -1,59 +1,59 @@
-# # 1)
-# f = open("data.txt","w")
+# 1)
+f = open("data.txt","w")
 
-# f.write("Hello Python")
-# f.close()
+f.write("Hello Python")
+f.close()
 
-# print("Data written successfully")
+print("Data written successfully")
 
-# # 2)
-# f = open("data.txt","r")
+# 2)
+f = open("data.txt","r")
 
-# print(f.read())
+print(f.read())
 
-# f.close()
+f.close()
 
-# # 3)
-# f = open("data.txt","a")
-# f.write("\n Welcome to Python")
-# f.close()
-# print("Data appended successfully")
+# 3)
+f = open("data.txt","a")
+f.write("\n Welcome to Python")
+f.close()
+print("Data appended successfully")
  
-# # 4)
+# 4)
 
-# with open("data.txt","r") as f:
-#     for line in f:
-#         print(line.strip())
+with open("data.txt","r") as f:
+    for line in f:
+        print(line.strip())
     
-# # 5)
+# 5)
 
-# fruits = ["Apple","Mango","Banana"]
+fruits = ["Apple","Mango","Banana"]
 
-# with open("fruits.txt","w") as f:
-#     f.write(",".join(fruits))
+with open("fruits.txt","w") as f:
+    f.write(",".join(fruits))
     
-# with open("fruits.txt","r") as f:
-#     data = f.read().split(",")
+with open("fruits.txt","r") as f:
+    data = f.read().split(",")
     
-# print(data)
+print(data)
 
-# # 6)
+# 6)
 
-# data = bytes([76,108,108,111,101])
+data = bytes([76,108,108,111,101])
 
-# with open("data.bin","wb") as f:
-#     f.write(data)
+with open("data.bin","wb") as f:
+    f.write(data)
 
-# with open("data.bin","rb") as f:
-#     print(f.read())
+with open("data.bin","rb") as f:
+    print(f.read())
     
-# # 7)
+# 7)
 
-# with open("data.bin","rb") as src:
-#     with open("copy.bin","wb") as dst:
-#         dst.write(src.read())
+with open("data.bin","rb") as src:
+    with open("copy.bin","wb") as dst:
+        dst.write(src.read())
         
-# print("File copied succecfully")
+print("File copied succecfully")
 
 employees = ["mayank","manav","hemangi","nisita"]
 
